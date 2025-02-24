@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Portfolio.css">
+    <title>Portfolio Website</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <h2><a href="#">Juan Pereira</a></h2>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About Me</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#Skills">Skills</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Home Section -->
+    <section id="home">
+        <h1>Hi There!
+        <h1>It's Me, Juan</h1></h1>
+        
+        
+        <a class="btn" href="resume.pdf" download="Juan_Pereira_Resume">Download Resume</a>
+    </section>
+
+    <!-- About Section -->
+    <section id="about">
+        <h2>About Me</h2>
+        <div class="about-content">
+        <img class="profile-picture" src="professionalprofile - Copy.JPG" alt="Profile Picture">
+        <p>"Hello, I am a 20 year old aspiring web developer hailing from Kochi, Kerala.
+        I am well versed in programming languages such as html, css, java, c, javascript
+        and frameworks like react. I like coding and have been pursuing it for the past 2 years."</br>
+        </p>
+        </div>
+        <ul class="contact-info">
+            <li><strong>Name:</strong> Juan Pereira</li>
+            <li><strong>Phone:</strong> 9895072286</li>
+            <li><strong>Email:</strong> pereirajuan2406@gmail.com</li>
+        </ul>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="Skills">
+        <h2> My Skills </h2>
+        <div class="Skills">
+            <p>HTML</p>
+                <div class="container">
+                    <div class="skills html">90%</div>
+                </div>
+            <p>CSS</p>
+                <div class="container">
+                    <div class="skills css">80%</div>
+                </div>
+            <p>JavaScript</p>
+                <div class="container">
+                    <div class="skills js">65%</div>
+                </div>
+            <p>PHP</p>
+                <div class="container">
+                    <div class="skills php">60%</div>
+                </div>
+        </div>
+    </section>
+    <!-- Project Section -->
+    <section id="projects">
+        <h2>My Projects</h2>
+        <div class="projects">
+            <div class="project-card">
+                <h3>Event Management System</h3>
+                <p>Built an Event Management System for college 
+                    as a group of 4 using html,css and javascript 
+                    that implements a dashboard of on-going and
+                    upcoming events, scheduling events for students.
+                </p>
+            </div>
+            <div class="project-card">
+                <h3>To-Do List</h3>
+                <p>Made an app for a To-Do List which consists of
+                   basic CRUD features using Javascript and React.
+                   The completed tasks implements a feature that 
+                   shows date of completion.</p>
+            </div>
+            <div class="project-card">
+                <h3>Calculator App</h3>
+                <p>Built a calculator website using React which involves
+                    usage of basic arithmetic and logical functions.<aside></aside>
+                </p>
+            </div>
+           <div class="project-card">
+                <h3>Game Program</h3>
+                <p>Worked on a basic tic tac toe game using javascript, html and css.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <h2>Contact Me</h2>
+        <form action="" method="POST">
+            <input type="text" name="name" placeholder="Your Name" required>
+            <input type="email" name="email" placeholder="Your Email" required>
+            <textarea name="message" placeholder="Your Message" required></textarea>
+            <button type="submit">Send</button>
+        </form>
+    </section>
+
+    <footer>
+        <div class="footer-text">
+            <p>&copy; Copyright 2024, Juan Pereira. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <style>
+        .footer-text p {
+            white-space: nowrap;
+            overflow: hidden;
+            display: inline-block;
+            animation: scroll-left 10s linear infinite;
+        }
+
+        @keyframes scroll-left {
+            from {
+                transform: translateX(100%);
+            }
+            to {
+                transform: translateX(-100%);
+            }
+        }
+    </style>
+</body>
+</html>
