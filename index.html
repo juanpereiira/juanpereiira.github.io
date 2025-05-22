@@ -26,9 +26,11 @@
     <section id="home">
         <h1>Hi There!
         <h1>It's Me, Juan</h1></h1>
-        
-        
-        <a class="btn" href="resume.pdf" download="Juan_Pereira_Resume">Download Resume</a>
+                <button class="resume-button" 
+                onclick="window.open('resume-juan.pdf', '_blank')">View Resume</button>
+            <a href="resume-juan.pdf" download>
+                <button class="resume-button">Download Resume</button>
+            </a>
     </section>
 
     <!-- About Section -->
@@ -38,36 +40,56 @@
         <img class="profile-picture" src="professionalprofile - Copy.JPG" alt="Profile Picture">
         <p>"Hello, I am a 20 year old aspiring web developer hailing from Kochi, Kerala.
         I am well versed in programming languages such as html, css, java, c, javascript
-        and frameworks like react. I like coding and have been pursuing it for the past 2 years."</br>
+        and frameworks like react. I have been pursuing coding for the past 2 years."</br>
         </p>
         </div>
         <ul class="contact-info">
             <li><strong>Name: </strong> Juan Pereira</li>
             <li><strong>Phone: </strong> 9895072286</li>
-            <li><strong>Email: </strong> pereirajuan2406@gmail.com</li>
+            <li><strong>Email: </strong> juanjude2022@gmail.com</li>
         </ul>
     </section>
 
     <!-- Skills Section -->
     <section id="Skills">
-        <h2> My Skills </h2>
+        <h2>My Skills</h2>
         <div class="Skills">
-            <p>HTML</p>
+            <div class="LHS">
+                <p>HTML</p>
                 <div class="container">
                     <div class="skills html">90%</div>
                 </div>
-            <p>CSS</p>
+                <p>CSS</p>
                 <div class="container">
                     <div class="skills css">80%</div>
                 </div>
-            <p>JavaScript</p>
+                <p>JavaScript</p>
                 <div class="container">
                     <div class="skills js">65%</div>
                 </div>
-            <p>PHP</p>
+                <p>SQL</p>
                 <div class="container">
-                    <div class="skills php">60%</div>
+                    <div class="skills sql">75%</div>
                 </div>
+            </div>
+            <div class="RHS">
+                <p>Python</p>
+                <div class="container">
+                    <div class="skills python">55%</div>
+                </div>
+                <p>Java</p>
+                <div class="container">
+                    <div class="skills java">70%</div>
+                </div>
+                <p>C</p>
+                <div class="container">
+                    <div class="skills c">75%</div>
+                </div>
+                <p>React</p>
+                <div class="container">
+                    <div class="skills react">65%</div>
+                </div>
+            </div>
         </div>
     </section>
     <!-- Project Section -->
@@ -75,7 +97,9 @@
         <h2>My Projects</h2>
         <div class="projects">
             <div class="project-card">
+                <div class="header">
                 <h3>Event Management System</h3>
+                </div>
                 <p>Built an Event Management System for college 
                     as a group of 4 using html,css and javascript 
                     that implements a dashboard of on-going and
@@ -83,21 +107,30 @@
                 </p>
             </div>
             <div class="project-card">
+                <div class="header">
                 <h3>To-Do List</h3>
+                </div>
                 <p>Made an app for a To-Do List which consists of
                    basic CRUD features using Javascript and React.
                    The completed tasks implements a feature that 
                    shows date of completion.</p>
             </div>
             <div class="project-card">
+                <div class="header">
                 <h3>Calculator App</h3>
+                </div>
                 <p>Built a calculator website using React which involves
                     usage of basic arithmetic and logical functions.<aside></aside>
                 </p>
             </div>
            <div class="project-card">
-                <h3>Game Program</h3>
-                <p>Worked on a basic tic tac toe game using javascript, html and css.</p>
+            <div class="header">
+                <h3>Green Up</h3>
+            </div>
+                <p>Built a community driven waste management web app that
+                    promotes sustainablity and keeps the community clean, as a group of 4 using front end tools such as react,
+                    tailwind css and backend tools like supabase and javascript for 
+                    data storage, OLA maps API</p>
             </div>
         </div>
     </section>
@@ -115,7 +148,7 @@
 
     <footer>
         <div class="footer-text">
-            <p>&copy; Copyright 2024, Juan Pereira. All Rights Reserved.</p>
+            <p>&copy; Copyright 2025, Juan Pereira. All Rights Reserved.</p>
         </div>
     </footer>
 
@@ -135,6 +168,7 @@
                 transform: translateX(-100%);
             }
         }
+
     </style>
 </body>
 </html>
