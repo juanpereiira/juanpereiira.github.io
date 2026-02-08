@@ -4,171 +4,306 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <title>Portfolio Website</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css">
+    <title>Juan Pereira - Portfolio</title>
 </head>
 <body>
+    <div id="particles-js"></div>
+    
+    <!-- Navigation -->
     <header>
         <nav>
             <div class="logo">
-                <h2><a href="#">Juan Pereira</a></h2>
+                <h2><a href="#home">Juan Pereira</a></h2>
             </div>
+            <button class="mobile-menu-toggle" aria-label="Toggle menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
             <ul class="nav-links">
                 <li><a href="#home">Home</a></li>
-                <li><a href="#about">About Me</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
                 <li><a href="#projects">Projects</a></li>
-                <li><a href="#Skills">Skills</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
         </nav>
     </header>
 
-    <!-- Home Section -->
-    <section id="home">
-        <h1>Hi There!
-        <h1>It's Me, Juan</h1></h1>
-                <button class="resume-button" 
-                onclick="window.open('resume-juan.pdf', '_blank')">View Resume</button>
-            <a href="resume-juan.pdf" download>
-                <button class="resume-button">Download Resume</button>
-            </a>
-    </section>
+    <main>
+        <!-- Home Section -->
+        <section id="home">
+            <div class="home-content">
+                <div class="text-content">
+                    <p class="greeting">Hi There!</p>
+                    <h1>I'm <span class="highlight">Juan Pereira</span></h1>
+                    <p class="subtitle">Aspiring Software Engineer</p>
+                    <p class="description">Building innovative solutions with modern web technologies</p>
+                </div>
+                <div class="cta-buttons">
+                    <button class="btn btn-primary" onclick="window.open('resume-juan.pdf', '_blank')">
+                        <i class="fas fa-eye"></i> View Resume
+                    </button>
+                    <a href="resume-juan.pdf" download>
+                        <button class="btn btn-secondary">
+                            <i class="fas fa-download"></i> Download Resume
+                        </button>
+                    </a>
+                </div>
+            </div>
+        </section>
 
-    <!-- About Section -->
-    <section id="about">
-        <h2>About Me</h2>
-        <div class="about-content">
-        <img class="profile-picture" src="professionalprofile - Copy.JPG" alt="Profile Picture">
-        <p>"Hello, I am a 20 year old aspiring web developer hailing from Kochi, Kerala.
-        I am well versed in programming languages such as html, css, java, c, javascript
-        and frameworks like react. I have been pursuing coding for the past 2 years."</br>
-        </p>
-        </div>
-        <ul class="contact-info">
-            <li><strong>Name: </strong> Juan Pereira</li>
-            <li><strong>Phone: </strong> 9895072286</li>
-            <li><strong>Email: </strong> juanjude2022@gmail.com</li>
-        </ul>
-    </section>
+        <!-- About Section -->
+        <section id="about">
+            <div class="container">
+                <h2 class="section-title">About Me</h2>
+                <div class="about-content">
+                    <div class="profile-card">
+                        <img class="profile-picture" src="professionalprofile - Copy.JPG" alt="Juan Pereira Profile Picture">
+                        <div class="social-links">    
+                            <a href="https://www.linkedin.com/in/juan-pereira-53b719295/" target="_blank" aria-label="LinkedIn Profile">
+                                <i class="fab fa-linkedin"></i>
+                            </a>
+                            <a href="https://github.com/juanpereiira" target="_blank" aria-label="GitHub Profile">
+                                <i class="fab fa-github"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="profile-description">
+                        <h3>Hello!</h3>
+                        <p>I'm a 21-year-old aspiring software engineer from Kochi, Kerala. With a passion for creating innovative solutions, I've been on an exciting coding journey since 2023.</p>
+                        
+                        <p>My expertise spans across multiple programming languages including <strong>HTML, CSS, JavaScript, Python, Java, and C</strong>, along with modern frameworks like <strong>React</strong>. Every day brings new challenges and opportunities to grow as a developer.</p>
+                        
+                        <div class="info-grid">
+                            <div class="info-item">
+                                <i class="fas fa-map-marker-alt"></i>
+                                <span>Kochi, Kerala</span>
+                            </div>
+                            <div class="info-item">
+                                <i class="fas fa-graduation-cap"></i>
+                                <span>B.Tech CS Student (RSET)</span>
+                            </div>
+                            <div class="info-item">
+                                <i class="fas fa-calendar"></i>
+                                <span>Graduating 2026</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-    <!-- Skills Section -->
-    <section id="Skills">
-        <h2>My Skills</h2>
-        <div class="Skills">
-            <div class="LHS">
-                <p>HTML</p>
-                <div class="container">
-                    <div class="skills html">90%</div>
-                </div>
-                <p>CSS</p>
-                <div class="container">
-                    <div class="skills css">80%</div>
-                </div>
-                <p>JavaScript</p>
-                <div class="container">
-                    <div class="skills js">65%</div>
-                </div>
-                <p>SQL</p>
-                <div class="container">
-                    <div class="skills sql">75%</div>
+        <!-- Skills Section -->
+        <section id="skills">
+            <div class="container">
+                <h2 class="section-title">Technical Skills</h2>
+                <div class="skills-grid">
+                    <div class="skill-item">
+                        <div class="skill-header">
+                            <span class="skill-name">HTML</span>
+                            <span class="skill-percentage">90%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress html" style="width: 90%"></div>
+                        </div>
+                    </div>
+                    
+                    <div class="skill-item">
+                        <div class="skill-header">
+                            <span class="skill-name">CSS</span>
+                            <span class="skill-percentage">80%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress css" style="width: 80%"></div>
+                        </div>
+                    </div>
+                    
+                    <div class="skill-item">
+                        <div class="skill-header">
+                            <span class="skill-name">JavaScript</span>
+                            <span class="skill-percentage">65%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress js" style="width: 65%"></div>
+                        </div>
+                    </div>
+                    
+                    <div class="skill-item">
+                        <div class="skill-header">
+                            <span class="skill-name">SQL</span>
+                            <span class="skill-percentage">75%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress sql" style="width: 75%"></div>
+                        </div>
+                    </div>
+                    
+                    <div class="skill-item">
+                        <div class="skill-header">
+                            <span class="skill-name">Python</span>
+                            <span class="skill-percentage">55%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress python" style="width: 55%"></div>
+                        </div>
+                    </div>
+                    
+                    <div class="skill-item">
+                        <div class="skill-header">
+                            <span class="skill-name">Java</span>
+                            <span class="skill-percentage">70%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress java" style="width: 70%"></div>
+                        </div>
+                    </div>
+                    
+                    <div class="skill-item">
+                        <div class="skill-header">
+                            <span class="skill-name">C</span>
+                            <span class="skill-percentage">75%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress c" style="width: 75%"></div>
+                        </div>
+                    </div>
+                    
+                    <div class="skill-item">
+                        <div class="skill-header">
+                            <span class="skill-name">React</span>
+                            <span class="skill-percentage">65%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress react" style="width: 65%"></div>
+                        </div>
+                    </div>
                 </div>
             </div>
-            <div class="RHS">
-                <p>Python</p>
-                <div class="container">
-                    <div class="skills python">55%</div>
-                </div>
-                <p>Java</p>
-                <div class="container">
-                    <div class="skills java">70%</div>
-                </div>
-                <p>C</p>
-                <div class="container">
-                    <div class="skills c">75%</div>
-                </div>
-                <p>React</p>
-                <div class="container">
-                    <div class="skills react">65%</div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- Project Section -->
-    <section id="projects">
-        <h2>My Projects</h2>
-        <div class="projects">
-            <div class="project-card">
-                <div class="header">
-                <h3>Event Management System</h3>
-                </div>
-                <p>Built an Event Management System for college 
-                    as a group of 4 using html,css and javascript 
-                    that implements a dashboard of on-going and
-                    upcoming events, scheduling events for students.
-                </p>
-            </div>
-            <div class="project-card">
-                <div class="header">
-                <h3>To-Do List</h3>
-                </div>
-                <p>Made an app for a To-Do List which consists of
-                   basic CRUD features using Javascript and React.
-                   The completed tasks implements a feature that 
-                   shows date of completion.</p>
-            </div>
-            <div class="project-card">
-                <div class="header">
-                <h3>Calculator App</h3>
-                </div>
-                <p>Built a calculator website using React which involves
-                    usage of basic arithmetic and logical functions.<aside></aside>
-                </p>
-            </div>
-           <div class="project-card">
-            <div class="header">
-                <h3>Green Up</h3>
-            </div>
-                <p>Built a community driven waste management web app that
-                    promotes sustainablity and keeps the community clean, as a group of 4 using front end tools such as react,
-                    tailwind css and backend tools like supabase and javascript for 
-                    data storage, OLA maps API</p>
-            </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- Contact Section -->
-    <section id="contact">
-        <h2>Contact Me</h2>
-        <form action="" method="POST">
-            <input type="text" name="name" placeholder="Your Name" required>
-            <input type="email" name="email" placeholder="Your Email" required>
-            <textarea name="message" placeholder="Your Message" required></textarea>
-            <button type="submit">Send</button>
-        </form>
-    </section>
+        <!-- Projects Section -->
+        <section id="projects">
+            <div class="container">
+                <h2 class="section-title">Featured Projects</h2>
+                <div class="projects-grid">
+                    <div class="project-card">
+                        <h3>Event Management System</h3>
+                        <p>Built a comprehensive Event Management System for college as a team of 4 using HTML, CSS, and JavaScript. Features include a dynamic dashboard for ongoing and upcoming events, and intelligent scheduling for students.</p>
+                        <div class="tech-stack">
+                            <span class="tech-tag">HTML</span>
+                            <span class="tech-tag">CSS</span>
+                            <span class="tech-tag">JavaScript</span>
+                        </div>
+                    </div>
+                    
+                    <div class="project-card">
+                        <h3>Green Up</h3>
+                        <p>Developed a community-driven waste management web app promoting sustainability. Features volunteer coordination, local clean-up events, and OLA Maps API integration. Built with React, Tailwind CSS, and Supabase.</p>
+                        <div class="tech-stack">
+                            <span class="tech-tag">React</span>
+                            <span class="tech-tag">Tailwind</span>
+                            <span class="tech-tag">Supabase</span>
+                            <span class="tech-tag">OLA API</span>
+                        </div>
+                    </div>
+                    
+                    <div class="project-card">
+                        <h3>To-Do List App</h3>
+                        <p>Created a feature-rich To-Do List application with full CRUD functionality using JavaScript and React. Includes task completion tracking with automatic date stamping for completed tasks.</p>
+                        <div class="tech-stack">
+                            <span class="tech-tag">React</span>
+                            <span class="tech-tag">JavaScript</span>
+                        </div>
+                    </div>
+                    
+                    <div class="project-card">
+                        <h3>Asteroid Impact Visualizer</h3>
+                        <p>Made an interactive web simulation that models asteroid-Earth collision
+                            dynamics using real NASA NEO data.</p>
+                        <div class="tech-stack">
+                            <span class="tech-tag">Three.js</span>
+                            <span class="tech-tag">React</span>
+                            <span class="tech-tag">JavaScript</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
 
+        <!-- Contact Section -->
+        <section id="contact">
+            <div class="container">
+                <h2 class="section-title">Get In Touch</h2>
+                <div class="contact-content">
+                    <div class="contact-info">
+                        <div class="contact-item">
+                            <i class="fas fa-user"></i>
+                            <div>
+                                <h4>Name</h4>
+                                <p>Juan Pereira</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-phone"></i>
+                            <div>
+                                <h4>Phone</h4>
+                                <p>+91 9895072286</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-envelope"></i>
+                            <div>
+                                <h4>Email</h4>
+                                <p>juanjude2022@gmail.com</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <div>
+                                <h4>Location</h4>
+                                <p>Kochi, Kerala, India</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <form class="contact-form">
+                        <div class="form-group">
+                            <input type="text" name="name" placeholder="Your Name" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" name="email" placeholder="Your Email" required>
+                        </div>
+                        <div class="form-group">
+                            <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">
+                            <i class="fas fa-paper-plane"></i> Send Message
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
     <footer>
-        <div class="footer-text">
-            <p>&copy; Copyright 2025, Juan Pereira. All Rights Reserved.</p>
+        <div class="footer-content">
+            <p>&copy; 2026 Juan Pereira. All Rights Reserved.</p>
+            <div class="footer-social">
+                <a href="https://www.linkedin.com/in/juan-pereira-53b719295/" target="_blank" aria-label="LinkedIn">
+                    <i class="fab fa-linkedin"></i>
+                </a>
+                <a href="https://github.com/juanpereiira" target="_blank" aria-label="GitHub">
+                    <i class="fab fa-github"></i>
+                </a>
+            </div>
         </div>
     </footer>
 
-    <style>
-        .footer-text p {
-            white-space: nowrap;
-            overflow: hidden;
-            display: inline-block;
-            animation: scroll-left 10s linear infinite;
-        }
-
-        @keyframes scroll-left {
-            from {
-                transform: translateX(100%);
-            }
-            to {
-                transform: translateX(-100%);
-            }
-        }
-
-    </style>
+    <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+    <script src="particles.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
