@@ -262,7 +262,7 @@ nav {
 /* 
 ABOUT SECTION*/
 #about {
-    padding: 6rem 0;
+    padding: 4rem 0;
     background: rgba(30, 41, 59, 0.3);
 }
 
@@ -362,71 +362,40 @@ ABOUT SECTION*/
 }
 
 #skills {
-    padding: 6rem 0;
+    padding: 4rem 0;
 }
 
-.skills-grid {
+.skill-container {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 2rem;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
 }
 
-.skill-item {
+.skill-category {
     background: var(--card-bg);
-    padding: 1.5rem;
+    padding: 1.75rem;
     border-radius: 15px;
     backdrop-filter: blur(10px);
     border: 1px solid rgba(255, 255, 255, 0.1);
     transition: var(--transition);
 }
 
-.skill-item:hover {
+.skill-category:hover {
     transform: translateY(-5px);
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
 }
 
-.skill-header {
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 0.75rem;
-}
-
-.skill-name {
-    font-weight: 600;
+.skill-category h3 {
+    font-size: 1.25rem;
+    margin-bottom: 1.25rem;
     color: var(--text-light);
 }
-
-.skill-percentage {
-    color: var(--primary-color);
-    font-weight: 600;
-}
-
-.skill-bar {
-    background: rgba(255, 255, 255, 0.1);
-    height: 10px;
-    border-radius: 10px;
-    overflow: hidden;
-}
-
-.skill-progress {
-    height: 100%;
-    border-radius: 10px;
-}
-
-.skill-progress.html { background: linear-gradient(90deg, #e34c26, #f06529); }
-.skill-progress.css { background: linear-gradient(90deg, #264de4, #2965f1); }
-.skill-progress.js { background: linear-gradient(90deg, #f0db4f, #f7df1e); }
-.skill-progress.sql { background: linear-gradient(90deg, #4479a1, #5294cc); }
-.skill-progress.python { background: linear-gradient(90deg, #306998, #ffd43b); }
-.skill-progress.java { background: linear-gradient(90deg, #f89820, #5382a1); }
-.skill-progress.c { background: linear-gradient(90deg, #555555, #a8b9cc); }
-.skill-progress.react { background: linear-gradient(90deg, #00d8ff, #61dafb); }
 
 /* ===========================
    PROJECTS SECTION
    =========================== */
 #projects {
-    padding: 6rem 0;
+    padding: 4rem 0;
     background: rgba(30, 41, 59, 0.3);
 }
 
@@ -507,18 +476,17 @@ ABOUT SECTION*/
    CONTACT SECTION
    =========================== */
 #contact {
-    padding: 6rem 0;
+    padding: 4rem 0;
 }
 
 .contact-content {
-    display: grid;
-    grid-template-columns: 1fr 1.5fr;
-    gap: 3rem;
+    max-width: 900px;
+    margin: 0 auto;
 }
 
 .contact-info {
-    display: flex;
-    flex-direction: column;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
     gap: 1.5rem;
 }
 
@@ -562,68 +530,6 @@ ABOUT SECTION*/
 .contact-item p {
     color: var(--text-light);
     font-size: 1.125rem;
-}
-
-.contact-form {
-    background: var(--card-bg);
-    padding: 2.5rem;
-    border-radius: 20px;
-    backdrop-filter: blur(10px);
-    border: 1px solid rgba(255, 255, 255, 0.1);
-}
-
-/* Contact form status message */
-
-#form-status {
-    margin-top: 1rem;
-    font-size: 1rem;
-    text-align: center;
-    font-weight: 600;
-    display: none;
-}
-
-#form-status.success {
-    color: #16a34a; /* Green */
-}
-
-#form-status.error {
-    color: #dc2626; /* Red */
-}
-
-#form-status.loading {
-    color: #2563eb; /* Blue */
-}
-
-.form-group {
-    margin-bottom: 1.5rem;
-}
-
-.contact-form input,
-.contact-form textarea {
-    width: 100%;
-    padding: 1rem;
-    background: rgba(255, 255, 255, 0.05);
-    border: 1px solid rgba(255, 255, 255, 0.1);
-    border-radius: 10px;
-    color: var(--text-light);
-    font-size: 1rem;
-    transition: var(--transition);
-}
-
-.contact-form input:focus,
-.contact-form textarea:focus {
-    outline: none;
-    border-color: var(--primary-color);
-    box-shadow: 0 0 0 3px rgba(99, 102, 241, 0.1);
-}
-
-.contact-form textarea {
-    resize: vertical;
-    min-height: 150px;
-}
-
-.contact-form button {
-    width: 100%;
 }
 
 /* ===========================
@@ -738,9 +644,13 @@ footer {
     .contact-content {
         grid-template-columns: 1fr;
     }
+
+    .contact-info {
+        grid-template-columns: 1fr;
+    }
     
-    .skills-grid {
-        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    .skill-container {
+        grid-template-columns: repeat(2, 1fr);
     }
 }
 
@@ -818,7 +728,7 @@ footer {
     }
     
     .projects-grid,
-    .skills-grid {
+    .skill-container {
         grid-template-columns: 1fr;
     }
     
